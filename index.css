@@ -1,0 +1,208 @@
+/* Font Import */
+
+@font-face {
+    font-family: "PECOFES";
+    src: url("./assets/fonts/Game\ Of\ Squids.ttf");
+}
+
+@font-face {
+    font-family: "Franchise";
+    src: url("./assets/fonts/Franchise.ttf");
+}
+
+body{
+    padding:0;
+    margin: 0;
+    background-image: url('./assets/images/cyberpunk.gif');
+    
+}
+
+.main-title
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    color: rgba(233, 51, 202, 0.829);
+    font-family: "PECOFES";
+    font-size: 10vw;
+    letter-spacing: 0.5px;
+    stroke-width: 10px;
+    stroke:red;
+    
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color:white !important;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 2.9vw;
+    overflow: hidden;
+    transition: 0.2s;
+    text-decoration: none !important;
+    border: 3px solid white;
+   
+}
+
+@media screen and (max-width: 900px) {
+    a{
+        background-color:#2196f3 ;
+    }
+
+    
+  }
+
+
+
+a:hover {
+    color: white !important;
+    background:#2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.5s;
+}
+
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+
+
+
+a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+
+
+a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+
+
+a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.75s;
+}
+
+
+
+
+/* TEXT FLICKER CSS */
+
+.neonText {
+    animation: flicker 2s infinite alternate;
+    color: white;
+    
+  }
+  
+  
+  /* Flickering animation */
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+       
+        0 0 120px rgb(255, 99, 247),
+        0 0 150px rgb(255, 0, 200),
+        0 0 140px rgb(255, 0, 200),
+        0 0 120px rgb(255, 0, 212),
+        0 0 350px rgb(255, 0, 191);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  
+  .neonBox {
+    animation: flickerbox 1.5s infinite alternate;
+    color: #fff;
+  }
+  
+  
+  /* Flickering animation */
+  @keyframes flickerbox {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        box-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        box-shadow: none;
+    }    
+  }
+    
+
+  
+
+  
+
+
+
+
