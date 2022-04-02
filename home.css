@@ -12,6 +12,11 @@
     src: url("./assets/fonts/Franchise.ttf");
 }
 
+@font-face {
+  font-family: "paper";
+  src: url("./assets/fonts/Papernotes.otf");
+}
+
 .neonText {
     animation: flicker 3s infinite alternate;
     color: white;
@@ -19,10 +24,12 @@
     
   }
 
-*
-{
-  font-family: 'Poppins', sans-serif;
-}
+  *
+  {
+    font-family: "paper";
+  }
+
+
   
   
   /* Flickering animation */
