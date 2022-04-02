@@ -53,6 +53,11 @@ a {
 @media screen and (max-width: 900px) {
     a{
         background-color:#2196f3 ;
+        margin-top: 1rem;
+    }
+    .main-title
+    {
+        font-size: 4rem;
     }
 
     
