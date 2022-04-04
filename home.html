@@ -35,6 +35,10 @@
   </head>
   <body>
 
+	<div id="preloader">
+		<p style="position: absolute; top:60%; left: 50%; font-size: 1.3rem;" class="neonText" >Loading</p>
+	</div>
+
 
   	<nav style="margin-right: -10px;" id="navbar" class="navbar">
 		  <ul class="nav-menu">
@@ -870,5 +874,13 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+
+	<script>
+		var loader = document.getElementById("preloader")
+		window.addEventListener("load",function()
+		{
+			loader.style.display="none"
+		})
+	</script>
   </body>
 </html>

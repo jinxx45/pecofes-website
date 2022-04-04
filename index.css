@@ -10,6 +10,17 @@
     src: url("./assets/fonts/Franchise.ttf");
 }
 
+#preloader
+{
+    background: black url("./assets/images/preloader.webp") no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-size: 30%;
+    
+}
+
 body{
     padding:0;
     margin: 0;
